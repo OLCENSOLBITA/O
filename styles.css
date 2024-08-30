@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+.menu a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.menu a.active {
+    background-color: #004f9f;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.calendar-container {
+    flex: 2;
+    margin-right: 20px;
+}
+
+.calendar-container h2 {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.calendar {
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th {
+    color: #333;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.calendar td {
+    width: 14%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.calendar .inactive {
+    color: #aaa;
+}
+
+.calendar .active {
+    color: #000;
+}
+
+.calendar .available {
+    color: #28a745;
+}
+
+.calendar .unavailable {
+    color: #dc3545;
+}
+
+.calendar .selected {
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+}
+
+.details {
+    flex: 1;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details h3 {
+    color: #007bff;
+}
+
+.therapist-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.therapist-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dropbtn {
+    background-color: #cfe2f3;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#available-time {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
